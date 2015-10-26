@@ -15,8 +15,8 @@
 ### 3°:
 
 - Open `assets.rb` and add this line: `Rails.application.config.assets.precompile += %w( webcam.swf )`
-- Open `app/assets/javascripts/application.js` and add: `//= require webcam.min` between the turbolinks and .
-  like this:
+- Open `app/assets/javascripts/application.js` and add: `//= require webcam.min` between the turbolinks and . like this:
+
   ```js
   //= require turbolinks 
   //= require webcam.min
@@ -29,7 +29,7 @@ Add to your Gemfile this gem (I've removed all unused gems from this app):
  
 ```rb
 gem 'carrierwave' 
-gem 'rmagick' # if you have any error to get this working see this link: http://stackoverflow.com/a/5207041
+gem 'rmagick' # have any error? see this link: http://stackoverflow.com/a/5207041
 ```
 
 And them bundle:
