@@ -98,4 +98,5 @@ end
 
 **That is it! just use your rails application with a webcam in it!**
 Any problem, please add a new [Issue](https://github.com/brunoocasali/webcamjs-plus-rails/issues)
+
 Dudes? See the source code.
