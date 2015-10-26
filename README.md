@@ -1,4 +1,8 @@
-# Webcam.js + Rails
+# Webcam.js + Rails + Carrierwave
+
+Webcam.js: https://github.com/jhuckaby/webcamjs  
+Rails: https://github.com/rails/rails  
+Carrierwave: https://github.com/carrierwaveuploader/carrierwave
 
 **To get working with Rails and Webcam use:**
 
