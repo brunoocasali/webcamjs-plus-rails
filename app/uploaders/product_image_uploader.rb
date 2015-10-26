@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 class ProductImageUploader < CarrierWave::Uploader::Base
 
   include CarrierWave::RMagick
