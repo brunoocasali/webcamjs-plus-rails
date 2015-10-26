@@ -27,14 +27,19 @@
 
 Add to your Gemfile this gem (I've removed all unused gems from this app): 
  
-`gem 'carrierwave'` 
+```rb
+gem 'carrierwave' 
+gem 'rmagick' # if you have any error to get this working see this link: http://stackoverflow.com/a/5207041
+```
 
 And them bundle:
 
 `$ bundle install`
 
 ### 5°:
+
 - Generate a new uploader: `$ rails g uploader ProductImage`
 - Generate a simple scaffold: `$ rails g scaffold product name image`
+- Open `config/routes.rb` and set the root url: `root 'products#index'`
 
 ### 6°:

@@ -1,44 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebcamjsPlusRails</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>WebcamJS + Rails</title>
+
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <!-- Configure a few settings and attach camera -->
-  <script>
-    Webcam.set({
-      width: 320,
-      height: 240,
-      image_format: 'jpeg',
-      jpeg_quality: 90
-    });
-    Webcam.attach( '#my_camera' );
-  </script>
-
-  <!--&lt;!&ndash; A button for taking snaps &ndash;&gt;-->
-  <!--<form>-->
-    <!--<input type=button value="Take Snapshot" onClick="take_snapshot()">-->
-  <!--</form>-->
-
-  <!--&lt;!&ndash; Code to handle taking the snapshot and displaying it locally &ndash;&gt;-->
-  <script>
-    function take_snapshot() {
-      // take snapshot and get image data
-      Webcam.snap(function(data_uri) {
-        // display results in page
-        document.getElementById('results').innerHTML =
-            '<h2>Here is your image:</h2>' +
-            '<img src="'+data_uri+'"/>';
-      });
-    }
-  </script>
-
-
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
